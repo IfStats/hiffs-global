@@ -1,0 +1,413 @@
+const divisions = [
+  {
+    number: "01",
+    name: "Hiffs Tech",
+    title: "Engineering the digital infrastructure of tomorrow.",
+    description:
+      "Software engineering, AI, automation, enterprise applications, APIs, cloud systems and digital platforms.",
+  },
+  {
+    number: "02",
+    name: "Hiffs Analytics",
+    title: "Turning data into decision intelligence.",
+    description:
+      "Analytics, business intelligence, data engineering, predictive systems, dashboards and machine learning.",
+  },
+  {
+    number: "03",
+    name: "Hiffs Media",
+    title: "Technology, ideas and stories that move people.",
+    description:
+      "Digital publishing, technology content, media production, storytelling and brand communications.",
+  },
+  {
+    number: "04",
+    name: "Future Ventures",
+    title: "Building what comes next.",
+    description:
+      "Technology products, venture concepts, emerging technologies, strategic partnerships and innovation.",
+  },
+];
+
+const capabilities = [
+  "Software Engineering",
+  "Artificial Intelligence",
+  "Data & Analytics",
+  "Business Intelligence",
+  "Automation",
+  "Enterprise Systems",
+  "Cloud Solutions",
+  "Digital Transformation",
+];
+
+const industries = [
+  "Financial Services",
+  "Real Estate",
+  "Retail & E-commerce",
+  "Events & Entertainment",
+  "Logistics",
+  "Education",
+  "Agriculture",
+  "Professional Services",
+];
+
+const projects = [
+  {
+    name: "EventBytes",
+    category: "Event Technology",
+    description:
+      "A digital event management and ticketing platform designed around organizers, attendees and real-time event operations.",
+  },
+  {
+    name: "Dictaz",
+    category: "AI / Intelligent Systems",
+    description:
+      "An intelligent language technology initiative exploring AI-powered communication and digital intelligence.",
+  },
+  {
+    name: "AtlasTrader",
+    category: "Financial Technology",
+    description:
+      "An algorithmic trading technology platform built around market intelligence, decision systems and automated execution.",
+  },
+];
+
+export default function Home() {
+  return (
+    <main>
+      {/* Navigation */}
+      <header className="site-header">
+        <div className="container nav">
+          <a href="#" className="brand">
+            <span className="brand-mark">H</span>
+            <span>
+              HIFFS<span className="brand-accent">GLOBAL</span>
+            </span>
+          </a>
+
+          <nav className="desktop-nav">
+            <a href="#about">About</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#work">Work</a>
+            <a href="#industries">Industries</a>
+            <a href="#ventures">Ventures</a>
+          </nav>
+
+          <a href="#contact" className="nav-cta">
+            Start a Project <span>↗</span>
+          </a>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="hero">
+        <div className="hero-grid" />
+
+        <div className="container hero-content">
+          <div className="eyebrow">
+            <span className="status-dot" />
+            TECHNOLOGY & INNOVATION GROUP
+          </div>
+
+          <h1>
+            Building intelligent
+            <br />
+            <span>systems</span> for a
+            <br />
+            digital future.
+          </h1>
+
+          <p className="hero-copy">
+            Hiffs Global Enterprises builds software, AI, data intelligence,
+            digital platforms and emerging technology for organizations
+            navigating what comes next.
+          </p>
+
+          <div className="hero-actions">
+            <a href="#capabilities" className="button button-primary">
+              Explore Capabilities <span>→</span>
+            </a>
+            <a href="#work" className="button button-secondary">
+              View Selected Work
+            </a>
+          </div>
+        </div>
+
+        <div className="hero-visual" aria-hidden="true">
+  <div className="hero-core">
+    <div className="core-ring ring-a" />
+    <div className="core-ring ring-b" />
+    <div className="core-ring ring-c" />
+    <div className="core-center">H</div>
+  </div>
+
+  <div className="system-node node-a">
+    <span />
+    AI SYSTEMS
+  </div>
+
+  <div className="system-node node-b">
+    <span />
+    DATA INTELLIGENCE
+  </div>
+
+  <div className="system-node node-c">
+    <span />
+    DIGITAL SYSTEMS
+  </div>
+
+  <div className="hero-orbit orbit-one" />
+  <div className="hero-orbit orbit-two" />
+  <div className="hero-orbit orbit-three" />
+</div>
+
+        <div className="hero-footer">
+          <div>ABUJA · NIGERIA</div>
+          <div>BUILDING FOR THE WORLD</div>
+          <div>EST. 2012</div>
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section id="about" className="section intro-section">
+        <div className="container intro-grid">
+          <div>
+            <p className="section-label">01 / THE GROUP</p>
+          </div>
+
+          <div>
+            <h2>
+              More than a technology company.
+              <br />
+              <span>An ecosystem for innovation.</span>
+            </h2>
+
+            <p className="large-copy">
+              Hiffs Global brings technology, intelligence, media and venture
+              development together under one group. We move from business
+              problems to architecture, from data to decisions, and from ideas
+              to working digital systems.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Divisions */}
+      <section className="section divisions-section">
+  <div className="container">
+    <div className="section-heading">
+      <div>
+        <p className="section-label">02 / THE HIFFS ECOSYSTEM</p>
+        <h2>
+          One group.
+          <br />
+          <span>Four engines.</span>
+        </h2>
+      </div>
+
+      <p>
+        Hiffs Global brings engineering, intelligence, media and venture
+        development together under one technology ecosystem.
+      </p>
+    </div>
+
+    <div className="ecosystem">
+      {divisions.map((division) => (
+        <article className="ecosystem-card" key={division.number}>
+          <div className="ecosystem-top">
+            <span>{division.number}</span>
+            <span className="ecosystem-line" />
+            <span>HIFFS GLOBAL</span>
+          </div>
+
+          <div className="ecosystem-body">
+            <p>{division.name}</p>
+            <h3>{division.title}</h3>
+            <span>{division.description}</span>
+          </div>
+
+          <div className="ecosystem-bottom">
+            <span>EXPLORE DIVISION</span>
+            <span className="ecosystem-arrow">↗</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+      {/* Capabilities */}
+      <section id="capabilities" className="section capabilities-section">
+        <div className="container">
+          <p className="section-label">03 / CAPABILITIES</p>
+
+          <div className="capabilities-heading">
+            <h2>What we build.</h2>
+            <p>
+              From individual digital products to complex enterprise
+              technology ecosystems.
+            </p>
+          </div>
+
+          <div className="capability-list">
+            {capabilities.map((capability, index) => (
+              <div className="capability-row" key={capability}>
+                <span>0{index + 1}</span>
+                <strong>{capability}</strong>
+                <span>↗</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Work */}
+      <section id="work" className="section work-section">
+        <div className="container">
+          <div className="section-heading">
+            <div>
+              <p className="section-label">04 / SELECTED WORK</p>
+              <h2>Ideas into systems.</h2>
+            </div>
+
+            <p>
+              Selected technology initiatives across software, AI and
+              intelligent systems.
+            </p>
+          </div>
+
+          <div className="project-list">
+            {projects.map((project, index) => (
+              <article className="project-row" key={project.name}>
+                <span className="project-index">0{index + 1}</span>
+
+                <div className="project-main">
+                  <p>{project.category}</p>
+                  <h3>{project.name}</h3>
+                  <span>{project.description}</span>
+                </div>
+
+                <span className="project-arrow">↗</span>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section id="industries" className="section industries-section">
+        <div className="container">
+          <p className="section-label">05 / INDUSTRIES</p>
+
+          <h2>
+            Technology without
+            <br />
+            <span>industry boundaries.</span>
+          </h2>
+
+          <div className="industry-grid">
+            {industries.map((industry, index) => (
+              <div className="industry-item" key={industry}>
+                <span>0{index + 1}</span>
+                {industry}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ventures */}
+      <section id="ventures" className="section ventures-section">
+        <div className="container venture-grid">
+          <div>
+            <p className="section-label">06 / FUTURE VENTURES</p>
+            <h2>
+              Building
+              <br />
+              <span>what comes next.</span>
+            </h2>
+          </div>
+
+          <div>
+            <p className="large-copy">
+              Future Ventures is where Hiffs explores emerging technologies,
+              builds new products, experiments with business models and
+              develops the ideas that may become tomorrow&apos;s companies.
+            </p>
+
+            <a href="#contact" className="text-link">
+              Explore Future Ventures <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section id="contact" className="cta-section">
+        <div className="container cta-content">
+          <p className="section-label">07 / START A CONVERSATION</p>
+
+          <h2>
+            Have a problem
+            <br />
+            <span>worth solving?</span>
+          </h2>
+
+          <p>
+            Tell us what you&apos;re trying to build, improve, automate or
+            understand. We&apos;ll help translate the challenge into a
+            technology strategy.
+          </p>
+
+          <a href="mailto:hello@hiffsglobal.com" className="button button-primary">
+            Start a Project <span>↗</span>
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container footer-top">
+          <div>
+            <a href="#" className="brand footer-brand">
+              <span className="brand-mark">H</span>
+              <span>
+                HIFFS<span className="brand-accent">GLOBAL</span>
+              </span>
+            </a>
+
+            <p>Technology & innovation for a digital future.</p>
+          </div>
+
+          <div className="footer-links">
+            <div>
+              <p>GROUP</p>
+              <a href="#about">About</a>
+              <a href="#capabilities">Capabilities</a>
+              <a href="#work">Selected Work</a>
+            </div>
+
+            <div>
+              <p>DIVISIONS</p>
+              <a href="#">Hiffs Tech</a>
+              <a href="#">Hiffs Analytics</a>
+              <a href="#">Hiffs Media</a>
+              <a href="#ventures">Future Ventures</a>
+            </div>
+
+            <div>
+              <p>CONNECT</p>
+              <a href="#contact">Contact</a>
+              <a href="mailto:hello@hiffsglobal.com">Email</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="container footer-bottom">
+          <span>© 2026 Hiffs Global Enterprises</span>
+          <span>Total Excellence.</span>
+        </div>
+      </footer>
+    </main>
+  );
+}
