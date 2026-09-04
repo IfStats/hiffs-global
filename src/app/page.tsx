@@ -101,6 +101,7 @@ export default function Home() {
             <a href="#work">Work</a>
             <a href="#industries">Industries</a>
             <a href="#ventures">Ventures</a>
+            <a href="#contact">Contact</a>
           </nav>
 
           <a href="#contact" className="nav-cta">
