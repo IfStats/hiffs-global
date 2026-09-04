@@ -1660,3 +1660,146 @@ a {
     right: 8%;
   }
 }
+
+.cta-section {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 8rem;
+}
+
+.cta-panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.cta-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.cta-content h2 {
+  margin: 1.5rem 0 2rem;
+  font-size: clamp(3.2rem, 6vw, 6.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+}
+
+.cta-content h2 span {
+  color: var(--muted);
+}
+
+.cta-content > p:not(.section-label) {
+  max-width: 560px;
+  margin: 0 0 2.5rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--foreground);
+  font-family: monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.cta-button:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cta-side {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  border-left: 1px solid var(--line);
+}
+
+.cta-side-item {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.cta-side-item span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-family: monospace;
+  font-size: 0.65rem;
+}
+
+.cta-side-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.cta-side-item p {
+  max-width: 300px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    padding: 4rem 2rem;
+  }
+
+  .cta-side {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

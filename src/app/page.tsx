@@ -460,27 +460,54 @@ export default function Home() {
 </section>
 
       {/* CTA */}
-      <section id="contact" className="cta-section">
-        <div className="container cta-content">
-          <p className="section-label">07 / START A CONVERSATION</p>
+      <section id="contact" className="section cta-section">
+  <div className="container">
+    <div className="cta-panel">
+      <div className="cta-grid" />
 
-          <h2>
-            Have a problem
-            <br />
-            <span>worth solving?</span>
-          </h2>
+      <div className="cta-content">
+        <p className="section-label">07 / START A CONVERSATION</p>
 
-          <p>
-            Tell us what you&apos;re trying to build, improve, automate or
-            understand. We&apos;ll help translate the challenge into a
-            technology strategy.
-          </p>
+        <h2>
+          Have a problem
+          <br />
+          worth <span>solving?</span>
+        </h2>
 
-          <a href="mailto:hello@hiffsglobal.com" className="button button-primary">
-            Start a Project <span>↗</span>
-          </a>
+        <p>
+          Tell us what you are building, what needs to change, or where
+          technology could create a better outcome. Let's explore what is
+          possible.
+        </p>
+
+        <a className="cta-button" href="mailto:hello@hiffsglobal.com">
+          <span>CONTACT HIFFS GLOBAL</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div className="cta-side">
+        <div className="cta-side-item">
+          <span>01</span>
+          <strong>DISCOVER</strong>
+          <p>Understand the challenge and define the opportunity.</p>
         </div>
-      </section>
+
+        <div className="cta-side-item">
+          <span>02</span>
+          <strong>DESIGN</strong>
+          <p>Shape the technology, product or system required.</p>
+        </div>
+
+        <div className="cta-side-item">
+          <span>03</span>
+          <strong>BUILD</strong>
+          <p>Engineer, launch and continuously improve the solution.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="footer">
