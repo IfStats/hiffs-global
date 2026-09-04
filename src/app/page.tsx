@@ -404,29 +404,60 @@ export default function Home() {
 
       {/* Ventures */}
       <section id="ventures" className="section ventures-section">
-        <div className="container venture-grid">
-          <div>
-            <p className="section-label">06 / FUTURE VENTURES</p>
-            <h2>
-              Building
-              <br />
-              <span>what comes next.</span>
-            </h2>
-          </div>
+  <div className="container">
+    <div className="ventures-layout">
+      <div className="ventures-intro">
+        <p className="section-label">06 / FUTURE VENTURES</p>
 
-          <div>
-            <p className="large-copy">
-              Future Ventures is where Hiffs explores emerging technologies,
-              builds new products, experiments with business models and
-              develops the ideas that may become tomorrow&apos;s companies.
-            </p>
+        <h2>
+          Building
+          <br />
+          <span>what comes next.</span>
+        </h2>
 
-            <a href="#contact" className="text-link">
-              Explore Future Ventures <span>↗</span>
-            </a>
-          </div>
+        <p className="ventures-lead">
+          Hiffs Global is not only building for today's digital economy.
+          We explore emerging technologies, develop new products and pursue
+          opportunities that can define tomorrow's markets.
+        </p>
+
+        <div className="ventures-marker">
+          <span className="ventures-marker-dot" />
+          <span>EXPLORATION / IN PROGRESS</span>
         </div>
-      </section>
+      </div>
+
+      <div className="ventures-panel">
+        <div className="ventures-panel-grid" />
+
+        <div className="ventures-orbit ventures-orbit-one" />
+        <div className="ventures-orbit ventures-orbit-two" />
+        <div className="ventures-orbit ventures-orbit-three" />
+
+        <div className="ventures-core">
+          <span>HG</span>
+        </div>
+
+        <div className="ventures-node ventures-node-one">
+          <span>AI</span>
+        </div>
+
+        <div className="ventures-node ventures-node-two">
+          <span>DATA</span>
+        </div>
+
+        <div className="ventures-node ventures-node-three">
+          <span>TECH</span>
+        </div>
+
+        <div className="ventures-panel-label">
+          <span>FUTURE SYSTEMS</span>
+          <span>01—∞</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* CTA */}
       <section id="contact" className="cta-section">
