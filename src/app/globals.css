@@ -66,14 +66,20 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
+  position: relative;
+  display: block;
   width: 34px;
   height: 34px;
-  border: 1px solid rgba(77, 163, 255, 0.7);
-  border-radius: 50%;
-  color: var(--accent);
-  font-size: 16px;
+  flex: 0 0 34px;
+  overflow: hidden;
+  border-radius: 9px;
+}
+
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .brand-accent {
@@ -799,15 +805,19 @@ a {
   height: 62px;
   display: grid;
   place-items: center;
+  overflow: hidden;
   border: 1px solid rgba(77, 163, 255, 0.7);
   border-radius: 50%;
   background: rgba(5, 7, 10, 0.85);
   box-shadow:
     0 0 35px rgba(77, 163, 255, 0.15),
     inset 0 0 25px rgba(77, 163, 255, 0.08);
-  color: var(--accent);
-  font-size: 25px;
-  font-weight: 700;
+}
+
+.core-center img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .system-node {
@@ -1036,5 +1046,128 @@ a {
 @media (max-width: 600px) {
   .ecosystem-card {
     min-height: 360px;
+  }
+}
+.capabilities-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.capabilities-heading {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.capabilities-heading h2 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.capabilities-heading h2 span {
+  color: var(--muted);
+}
+
+.capabilities-heading p {
+  max-width: 480px;
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.capability-list {
+  border-top: 1px solid var(--line);
+}
+
+.capability-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 50px;
+  gap: 2rem;
+  align-items: center;
+  min-height: 125px;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+  transition:
+    padding 0.3s ease,
+    background 0.3s ease;
+}
+
+.capability-row:hover {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.capability-number {
+  color: var(--muted);
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+
+.capability-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.capability-content strong {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+}
+
+.capability-content span {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.capability-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--foreground);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.capability-row:hover .capability-arrow {
+  transform: rotate(45deg);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 900px) {
+  .capabilities-heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .capability-row {
+    grid-template-columns: 55px 1fr 42px;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .capability-row {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .capability-arrow {
+    display: none;
+  }
+
+  .capability-content span {
+    font-size: 0.82rem;
   }
 }

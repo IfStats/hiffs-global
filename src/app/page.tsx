@@ -1,3 +1,4 @@
+import Image from "next/image";
 const divisions = [
   {
     number: "01",
@@ -79,11 +80,20 @@ export default function Home() {
       <header className="site-header">
         <div className="container nav">
           <a href="#" className="brand">
-            <span className="brand-mark">H</span>
-            <span>
-              HIFFS<span className="brand-accent">GLOBAL</span>
-            </span>
-          </a>
+  <span className="brand-mark">
+    <Image
+      src="/hiffs-global-icon.png"
+      alt="Hiffs Global"
+      width={34}
+      height={34}
+      priority
+    />
+  </span>
+
+  <span>
+    HIFFS<span className="brand-accent">GLOBAL</span>
+  </span>
+</a>
 
           <nav className="desktop-nav">
             <a href="#about">About</a>
@@ -138,7 +148,14 @@ export default function Home() {
     <div className="core-ring ring-a" />
     <div className="core-ring ring-b" />
     <div className="core-ring ring-c" />
-    <div className="core-center">H</div>
+    <div className="core-center">
+  <Image
+    src="/hiffs-global-icon.png"
+    alt=""
+    width={62}
+    height={62}
+  />
+</div>
   </div>
 
   <div className="system-node node-a">
@@ -238,28 +255,53 @@ export default function Home() {
 
       {/* Capabilities */}
       <section id="capabilities" className="section capabilities-section">
-        <div className="container">
-          <p className="section-label">03 / CAPABILITIES</p>
+  <div className="container">
+    <div className="section-heading">
+      <div>
+        <p className="section-label">03 / CAPABILITIES</p>
+        <h2>
+          What we
+          <br />
+          <span>build.</span>
+        </h2>
+      </div>
 
-          <div className="capabilities-heading">
-            <h2>What we build.</h2>
-            <p>
-              From individual digital products to complex enterprise
-              technology ecosystems.
-            </p>
+      <p>
+        From intelligent digital products to complex enterprise technology
+        ecosystems, we design and engineer systems built for scale,
+        performance and long-term value.
+      </p>
+    </div>
+
+    <div className="capability-list">
+      {capabilities.map((capability, index) => (
+        <div className="capability-row" key={capability}>
+          <div className="capability-number">
+            {String(index + 1).padStart(2, "0")}
           </div>
 
-          <div className="capability-list">
-            {capabilities.map((capability, index) => (
-              <div className="capability-row" key={capability}>
-                <span>0{index + 1}</span>
-                <strong>{capability}</strong>
-                <span>↗</span>
-              </div>
-            ))}
+          <div className="capability-content">
+            <strong>{capability}</strong>
+            <span>
+              {[
+                "Product engineering, web applications and scalable software systems.",
+                "Machine intelligence, intelligent automation and AI-powered products.",
+                "Data engineering, analytics pipelines and decision intelligence.",
+                "Dashboards, reporting systems and executive intelligence platforms.",
+                "Workflow automation, integrations and operational optimization.",
+                "Enterprise applications, APIs and connected business systems.",
+                "Cloud architecture, infrastructure and production-ready platforms.",
+                "Technology strategy, modernization and digital operating models.",
+              ][index]}
+            </span>
           </div>
+
+          <div className="capability-arrow">↗</div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Work */}
       <section id="work" className="section work-section">
@@ -370,11 +412,19 @@ export default function Home() {
         <div className="container footer-top">
           <div>
             <a href="#" className="brand footer-brand">
-              <span className="brand-mark">H</span>
-              <span>
-                HIFFS<span className="brand-accent">GLOBAL</span>
-              </span>
-            </a>
+  <span className="brand-mark">
+    <Image
+      src="/hiffs-global-icon.png"
+      alt="Hiffs Global"
+      width={34}
+      height={34}
+    />
+  </span>
+
+  <span>
+    HIFFS<span className="brand-accent">GLOBAL</span>
+  </span>
+</a>
 
             <p>Technology & innovation for a digital future.</p>
           </div>
