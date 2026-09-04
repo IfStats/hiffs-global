@@ -365,25 +365,42 @@ export default function Home() {
 
       {/* Industries */}
       <section id="industries" className="section industries-section">
-        <div className="container">
-          <p className="section-label">05 / INDUSTRIES</p>
+  <div className="container">
+    <div className="section-heading">
+      <div>
+        <p className="section-label">05 / INDUSTRIES</p>
+        <h2>
+          Technology
+          <br />
+          <span>without borders.</span>
+        </h2>
+      </div>
 
-          <h2>
-            Technology without
-            <br />
-            <span>industry boundaries.</span>
-          </h2>
+      <p>
+        Our systems are designed to adapt to the operational realities of
+        different industries, from emerging ventures to established
+        organizations.
+      </p>
+    </div>
 
-          <div className="industry-grid">
-            {industries.map((industry, index) => (
-              <div className="industry-item" key={industry}>
-                <span>0{index + 1}</span>
-                {industry}
-              </div>
-            ))}
+    <div className="industries-grid">
+      {industries.map((industry, index) => (
+        <article className="industry-card" key={industry}>
+          <span className="industry-number">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+
+          <div className="industry-card-content">
+            <span className="industry-kicker">SECTOR</span>
+            <h3>{industry}</h3>
           </div>
-        </div>
-      </section>
+
+          <span className="industry-arrow">↗</span>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Ventures */}
       <section id="ventures" className="section ventures-section">
