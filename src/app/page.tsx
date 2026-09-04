@@ -305,36 +305,63 @@ export default function Home() {
 
       {/* Work */}
       <section id="work" className="section work-section">
-        <div className="container">
-          <div className="section-heading">
-            <div>
-              <p className="section-label">04 / SELECTED WORK</p>
-              <h2>Ideas into systems.</h2>
+  <div className="container">
+    <div className="section-heading">
+      <div>
+        <p className="section-label">04 / SELECTED WORK</p>
+        <h2>
+          Systems built
+          <br />
+          <span>to matter.</span>
+        </h2>
+      </div>
+
+      <p>
+        A selection of technology platforms and intelligent systems developed
+        across events, artificial intelligence and financial technology.
+      </p>
+    </div>
+
+    <div className="work-grid">
+      {projects.map((project, index) => (
+        <article className="work-card" key={project.name}>
+          <div className="work-card-visual">
+            <div className="work-grid-lines" />
+
+            <div className="work-orbit work-orbit-one" />
+            <div className="work-orbit work-orbit-two" />
+
+            <div className="work-card-index">
+              {String(index + 1).padStart(2, "0")}
             </div>
 
-            <p>
-              Selected technology initiatives across software, AI and
-              intelligent systems.
-            </p>
+            <div className="work-card-symbol">
+              {project.name.charAt(0)}
+            </div>
+
+            <span className="work-status">SYSTEM / ACTIVE</span>
           </div>
 
-          <div className="project-list">
-            {projects.map((project, index) => (
-              <article className="project-row" key={project.name}>
-                <span className="project-index">0{index + 1}</span>
+          <div className="work-card-content">
+            <div className="work-card-meta">
+              <span>{project.category}</span>
+              <span>HIFFS GLOBAL</span>
+            </div>
 
-                <div className="project-main">
-                  <p>{project.category}</p>
-                  <h3>{project.name}</h3>
-                  <span>{project.description}</span>
-                </div>
+            <h3>{project.name}</h3>
 
-                <span className="project-arrow">↗</span>
-              </article>
-            ))}
+            <p>{project.description}</p>
+
+            <div className="work-card-footer">
+              <span>EXPLORE PROJECT</span>
+              <span className="work-card-arrow">↗</span>
+            </div>
           </div>
-        </div>
-      </section>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Industries */}
       <section id="industries" className="section industries-section">
