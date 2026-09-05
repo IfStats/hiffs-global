@@ -2,11 +2,36 @@
 
 :root {
   --background: #05070a;
-  --foreground: #f5f7fa;
-  --muted: #8d96a3;
+  --foreground: #f7f9fc;
+  --muted: #9aa5b5;
   --line: rgba(255, 255, 255, 0.1);
-  --panel: #0a0d12;
-  --accent: #4da3ff;
+  --panel: #0a0d14;
+
+  --blue: #4da3ff;
+  --cyan: #31e7ff;
+  --violet: #8b5cf6;
+  --magenta: #ec4899;
+  --lime: #b8f34a;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 8% 12%,
+      rgba(49, 231, 255, 0.08),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 92% 18%,
+      rgba(139, 92, 246, 0.1),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 65% 78%,
+      rgba(236, 72, 153, 0.06),
+      transparent 25%
+    ),
+    var(--background);
 }
 
 * {
@@ -150,6 +175,7 @@ a {
 .eyebrow,
 .section-label {
   color: var(--accent);
+  color: var(--cyan);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.18em;
@@ -218,12 +244,21 @@ a {
 }
 
 .button-primary {
-  background: var(--accent);
-  color: #04101d;
+  border-color: rgba(49, 231, 255, 0.45);
+  background: linear-gradient(
+    135deg,
+    rgba(49, 231, 255, 0.16),
+    rgba(77, 163, 255, 0.08)
+  );
 }
 
 .button-primary:hover {
-  background: #75b8ff;
+  border-color: var(--cyan);
+  background: linear-gradient(
+    135deg,
+    rgba(49, 231, 255, 0.25),
+    rgba(139, 92, 246, 0.14)
+  );
 }
 
 .button-secondary {
@@ -965,6 +1000,46 @@ a {
 
 .ecosystem-card:hover::after {
   transform: scale(1.35);
+}
+
+.ecosystem-card:nth-child(1) {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(49, 231, 255, 0.1),
+      transparent 35%
+    ),
+    var(--panel);
+}
+
+.ecosystem-card:nth-child(2) {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(139, 92, 246, 0.1),
+      transparent 35%
+    ),
+    var(--panel);
+}
+
+.ecosystem-card:nth-child(3) {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(236, 72, 153, 0.09),
+      transparent 35%
+    ),
+    var(--panel);
+}
+
+.ecosystem-card:nth-child(4) {
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(184, 243, 74, 0.08),
+      transparent 35%
+    ),
+    var(--panel);
 }
 
 .ecosystem-top {
@@ -1980,4 +2055,73 @@ html {
     width: 34px;
     height: 34px;
   }
+}
+
+.hero {
+  background:
+    radial-gradient(
+      circle at 72% 35%,
+      rgba(49, 231, 255, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 70%,
+      rgba(139, 92, 246, 0.12),
+      transparent 28%
+    );
+}
+
+.divisions-section {
+  background:
+    radial-gradient(
+      circle at 10% 40%,
+      rgba(139, 92, 246, 0.08),
+      transparent 28%
+    ),
+    var(--background);
+}
+
+.capabilities-section {
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(49, 231, 255, 0.07),
+      transparent 25%
+    ),
+    var(--background);
+}
+
+.work-section {
+  background:
+    radial-gradient(
+      circle at 15% 65%,
+      rgba(236, 72, 153, 0.07),
+      transparent 25%
+    ),
+    var(--background);
+}
+
+.industries-section {
+  background:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(139, 92, 246, 0.08),
+      transparent 25%
+    ),
+    var(--background);
+}
+
+.ventures-section {
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(49, 231, 255, 0.08),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(236, 72, 153, 0.08),
+      transparent 28%
+    ),
+    var(--background);
 }

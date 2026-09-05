@@ -79,31 +79,13 @@ const projects = [
 
 const heroSlides = [
   {
-    eyebrow: "TECHNOLOGY FOR A BRIGHTER TOMORROW",
-    title: "Global ideas.",
-    highlight: "Real impact.",
+    eyebrow: "TECHNOLOGY & INNOVATION GROUP",
+    title: "Building Intelligent Solutions",
+    highlight: "for a Connected World",
     description:
-      "We build intelligent technology, digital platforms and data-driven systems designed to create opportunity and solve meaningful problems.",
-    image: "/hero-global.jpg",
+      "We design, build and deploy technology solutions across AI, data, software and digital platforms for businesses, institutions and communities.",
+    image: "/hero-approved.jpg",
     tag: "AFRICA TO THE WORLD",
-  },
-  {
-    eyebrow: "INTELLIGENCE · AUTOMATION · SCALE",
-    title: "Building the",
-    highlight: "intelligent future.",
-    description:
-      "From artificial intelligence to enterprise automation, we engineer systems that help organizations operate, understand and grow.",
-    image: "/hero-ai.jpg",
-    tag: "INTELLIGENCE SYSTEMS",
-  },
-  {
-    eyebrow: "INNOVATION · PRODUCTS · VENTURES",
-    title: "Ideas become",
-    highlight: "systems.",
-    description:
-      "We transform ambitious ideas into technology products, platforms and ventures built for real-world impact.",
-    image: "/hero-innovation.jpg",
-    tag: "FUTURE SYSTEMS",
   },
 ];
 
