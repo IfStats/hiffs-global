@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
 const divisions = [
   {
     number: "01",
@@ -73,7 +77,47 @@ const projects = [
   },
 ];
 
-export default function Home() {
+const heroSlides = [
+  {
+    eyebrow: "TECHNOLOGY FOR A BRIGHTER TOMORROW",
+    title: "Global ideas.",
+    highlight: "Real impact.",
+    description:
+      "We build intelligent technology, digital platforms and data-driven systems designed to create opportunity and solve meaningful problems.",
+    image: "/hero-global.jpg",
+    tag: "AFRICA TO THE WORLD",
+  },
+  {
+    eyebrow: "INTELLIGENCE · AUTOMATION · SCALE",
+    title: "Building the",
+    highlight: "intelligent future.",
+    description:
+      "From artificial intelligence to enterprise automation, we engineer systems that help organizations operate, understand and grow.",
+    image: "/hero-ai.jpg",
+    tag: "INTELLIGENCE SYSTEMS",
+  },
+  {
+    eyebrow: "INNOVATION · PRODUCTS · VENTURES",
+    title: "Ideas become",
+    highlight: "systems.",
+    description:
+      "We transform ambitious ideas into technology products, platforms and ventures built for real-world impact.",
+    image: "/hero-innovation.jpg",
+    tag: "FUTURE SYSTEMS",
+  },
+];
+
+export default function Home() 
+
+{ const [activeSlide, setActiveSlide] = useState(0);
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    setActiveSlide((current) => (current + 1) % heroSlides.length);
+  }, 6000);
+
+  return () => clearInterval(timer);
+}, []);
   return (
     <main>
       {/* Navigation */}
@@ -112,79 +156,102 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero">
-        <div className="hero-grid" />
+  <div className="hero-slider" aria-label="Hiffs Global featured messages">
+    {heroSlides.map((slide, index) => (
+      <div
+        className={`hero-slide ${
+          index === activeSlide ? "hero-slide-active" : ""
+        }`}
+        key={slide.image}
+        aria-hidden={index !== activeSlide}
+      >
+        <Image
+          src={slide.image}
+          alt=""
+          fill
+          priority={index === 0}
+          sizes="100vw"
+          className="hero-slide-image"
+        />
 
-        <div className="container hero-content">
-          <div className="eyebrow">
-            <span className="status-dot" />
-            TECHNOLOGY & INNOVATION GROUP
-          </div>
-
-          <h1>
-            Building intelligent
-            <br />
-            <span>systems</span> for a
-            <br />
-            digital future.
-          </h1>
-
-          <p className="hero-copy">
-            Hiffs Global Enterprises builds software, AI, data intelligence,
-            digital platforms and emerging technology for organizations
-            navigating what comes next.
-          </p>
-
-          <div className="hero-actions">
-            <a href="#capabilities" className="button button-primary">
-              Explore Capabilities <span>→</span>
-            </a>
-            <a href="#work" className="button button-secondary">
-              View Selected Work
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-visual" aria-hidden="true">
-  <div className="hero-core">
-    <div className="core-ring ring-a" />
-    <div className="core-ring ring-b" />
-    <div className="core-ring ring-c" />
-    <div className="core-center">
-  <Image
-    src="/hiffs-global-icon.png"
-    alt=""
-    width={62}
-    height={62}
-  />
-</div>
+        <div className="hero-slide-overlay" />
+      </div>
+    ))}
   </div>
 
-  <div className="system-node node-a">
-    <span />
-    AI SYSTEMS
+  <div className="hero-grid" />
+
+  <div className="container hero-content">
+    <div className="hero-copy-column">
+      <p className="eyebrow">{heroSlides[activeSlide].eyebrow}</p>
+
+      <h1>
+        {heroSlides[activeSlide].title}
+        <br />
+        <span>{heroSlides[activeSlide].highlight}</span>
+      </h1>
+
+      <p className="hero-copy">
+        {heroSlides[activeSlide].description}
+      </p>
+
+      <div className="hero-actions">
+        <a href="#about" className="button button-primary">
+          Explore Our Ecosystem <span>↗</span>
+        </a>
+
+        <a href="#work" className="button button-secondary">
+          View Selected Work <span>↗</span>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <div className="system-node node-b">
-    <span />
-    DATA INTELLIGENCE
+  <div className="hero-slide-label">
+    <span>{heroSlides[activeSlide].tag}</span>
+    <span>
+      {String(activeSlide + 1).padStart(2, "0")} /{" "}
+      {String(heroSlides.length).padStart(2, "0")}
+    </span>
   </div>
 
-  <div className="system-node node-c">
-    <span />
-    DIGITAL SYSTEMS
+  <div className="hero-controls">
+    <button
+      type="button"
+      aria-label="Previous slide"
+      onClick={() =>
+        setActiveSlide(
+          (activeSlide - 1 + heroSlides.length) % heroSlides.length
+        )
+      }
+    >
+      ←
+    </button>
+
+    <div className="hero-indicators">
+      {heroSlides.map((slide, index) => (
+        <button
+          type="button"
+          key={slide.image}
+          aria-label={`Go to slide ${index + 1}`}
+          aria-current={index === activeSlide}
+          className={index === activeSlide ? "active" : ""}
+          onClick={() => setActiveSlide(index)}
+        />
+      ))}
+    </div>
+
+    <button
+      type="button"
+      aria-label="Next slide"
+      onClick={() =>
+        setActiveSlide((activeSlide + 1) % heroSlides.length)
+      }
+    >
+      →
+    </button>
   </div>
-
-  <div className="hero-orbit orbit-one" />
-  <div className="hero-orbit orbit-two" />
-  <div className="hero-orbit orbit-three" />
-</div>
-
-        <div className="hero-footer">
-          <div>ABUJA · NIGERIA</div>
-          <div>BUILDING FOR THE WORLD</div>
-          <div>EST. 2012</div>
-        </div>
-      </section>
+</section>
 
       {/* Intro */}
       <section id="about" className="section intro-section">
