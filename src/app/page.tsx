@@ -61,19 +61,22 @@ const projects = [
     name: "EventBytes",
     category: "Event Technology",
     description:
-      "A digital event management and ticketing platform designed around organizers, attendees and real-time event operations.",
+      "A digital event technology platform for event management, ticketing, QR verification and operational intelligence.",
+    href: "/work/eventbytes",
   },
   {
     name: "Dictaz",
     category: "AI / Intelligent Systems",
     description:
-      "An intelligent language technology initiative exploring AI-powered communication and digital intelligence.",
+      "An evolving artificial intelligence platform connecting knowledge, reasoning, intelligent agents and automation.",
+    href: "/work/dictaz",
   },
   {
     name: "AtlasTrader",
     category: "Financial Technology",
     description:
-      "An algorithmic trading technology platform built around market intelligence, decision systems and automated execution.",
+      "An intelligent market infrastructure initiative for systematic analysis, risk management and controlled execution.",
+    href: "/work/atlastrader",
   },
 ];
 
@@ -374,41 +377,45 @@ useEffect(() => {
 
     <div className="work-grid">
       {projects.map((project, index) => (
-        <article className="work-card" key={project.name}>
-          <div className="work-card-visual">
-            <div className="work-grid-lines" />
+  <a
+    href={project.href}
+    className="work-card"
+    key={project.name}
+  >
+    <div className="work-card-visual">
+      <div className="work-grid-lines" />
 
-            <div className="work-orbit work-orbit-one" />
-            <div className="work-orbit work-orbit-two" />
+      <div className="work-orbit work-orbit-one" />
+      <div className="work-orbit work-orbit-two" />
 
-            <div className="work-card-index">
-              {String(index + 1).padStart(2, "0")}
-            </div>
+      <div className="work-card-index">
+        {String(index + 1).padStart(2, "0")}
+      </div>
 
-            <div className="work-card-symbol">
-              {project.name.charAt(0)}
-            </div>
+      <div className="work-card-symbol">
+        {project.name.charAt(0)}
+      </div>
 
-            <span className="work-status">SYSTEM / ACTIVE</span>
-          </div>
+      <span className="work-status">SYSTEM / ACTIVE</span>
+    </div>
 
-          <div className="work-card-content">
-            <div className="work-card-meta">
-              <span>{project.category}</span>
-              <span>HIFFS GLOBAL</span>
-            </div>
+    <div className="work-card-content">
+      <div className="work-card-meta">
+        <span>{project.category}</span>
+        <span>HIFFS GLOBAL</span>
+      </div>
 
-            <h3>{project.name}</h3>
+      <h3>{project.name}</h3>
 
-            <p>{project.description}</p>
+      <p>{project.description}</p>
 
-            <div className="work-card-footer">
-              <span>EXPLORE PROJECT</span>
-              <span className="work-card-arrow">↗</span>
-            </div>
-          </div>
-        </article>
-      ))}
+      <div className="work-card-footer">
+        <span>EXPLORE PROJECT</span>
+        <span className="work-card-arrow">↗</span>
+      </div>
+    </div>
+  </a>
+))}
     </div>
   </div>
 </section>
