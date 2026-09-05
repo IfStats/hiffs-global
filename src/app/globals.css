@@ -2125,3 +2125,614 @@ html {
     ),
     var(--background);
 }
+
+.about-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #08101c;
+}
+
+.about-container {
+  width: min(1200px, calc(100% - 4rem));
+  margin: 0 auto;
+}
+
+.about-header {
+  position: relative;
+  z-index: 20;
+  background: #050b14;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.about-brand-mark {
+  display: flex;
+}
+
+.about-brand-text {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+.about-brand-text strong {
+  color: #31e7ff;
+  font-weight: 600;
+}
+
+.about-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+}
+
+.about-nav-links a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.about-nav-links a:hover,
+.about-nav-links a.active {
+  color: #31e7ff;
+}
+
+.about-header-cta,
+.about-future-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  border: 1px solid rgba(49, 231, 255, 0.5);
+  padding: 0.8rem 1rem;
+  color: #ffffff;
+  font-size: 0.7rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.about-header-cta:hover {
+  background: rgba(49, 231, 255, 0.1);
+  border-color: #31e7ff;
+}
+
+.about-label {
+  margin: 0;
+  color: #087ca8;
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.about-hero {
+  padding: 8rem 0 7rem;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(49, 231, 255, 0.1),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 70% 75%,
+      rgba(139, 92, 246, 0.08),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 5rem;
+  align-items: end;
+  margin-top: 3rem;
+}
+
+.about-hero h1 {
+  margin: 0;
+  max-width: 850px;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+  font-weight: 500;
+}
+
+.about-hero h1 span,
+.about-section-heading h2 span,
+.about-story h2 span,
+.about-belief h2 span,
+.about-global h2 span,
+.about-future h2 span {
+  color: #718096;
+}
+
+.about-hero-copy {
+  max-width: 500px;
+}
+
+.about-hero-copy p,
+.about-story-text p {
+  color: #596579;
+  line-height: 1.8;
+}
+
+.about-story {
+  padding: 8rem 0;
+  border-top: 1px solid #e7ebf0;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 6rem;
+}
+
+.about-story h2 {
+  margin: 1.5rem 0 0;
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 500;
+}
+
+.about-story-text {
+  padding-top: 2rem;
+}
+
+.about-ecosystem,
+.about-approach {
+  padding: 8rem 0;
+  background: #f5f7fa;
+}
+
+.about-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.75fr;
+  gap: 5rem;
+  align-items: end;
+  margin-bottom: 4rem;
+}
+
+.about-section-heading h2 {
+  margin: 1.5rem 0 0;
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.065em;
+  font-weight: 500;
+}
+
+.about-section-heading > p {
+  margin: 0;
+  max-width: 480px;
+  color: #657083;
+  line-height: 1.8;
+}
+
+.about-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #dce2e8;
+  border-left: 1px solid #dce2e8;
+}
+
+.about-ecosystem-card {
+  position: relative;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-right: 1px solid #dce2e8;
+  border-bottom: 1px solid #dce2e8;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.about-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.about-accent-blue {
+  background: #4da3ff;
+}
+
+.about-accent-cyan {
+  background: #31e7ff;
+}
+
+.about-accent-violet {
+  background: #8b5cf6;
+}
+
+.about-accent-lime {
+  background: #9bd43c;
+}
+
+.about-card-number {
+  color: #8994a4;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+.about-ecosystem-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
+.about-ecosystem-card p {
+  max-width: 430px;
+  margin: 0;
+  color: #687386;
+  line-height: 1.7;
+}
+
+.about-card-arrow {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #dce2e8;
+  border-radius: 50%;
+}
+
+.about-approach {
+  background: #ffffff;
+}
+
+.about-approach-list {
+  border-top: 1px solid #dce2e8;
+}
+
+.about-approach-row {
+  display: grid;
+  grid-template-columns: 80px 0.7fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid #dce2e8;
+}
+
+.about-approach-row > span {
+  color: #8994a4;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+.about-approach-row h3 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.about-approach-row p {
+  margin: 0;
+  color: #687386;
+  line-height: 1.6;
+}
+
+.about-principles {
+  padding: 8rem 0;
+  background: #f5f7fa;
+}
+
+.about-belief {
+  max-width: 1000px;
+  margin: 3rem 0 5rem;
+}
+
+.about-belief h2 {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.065em;
+  font-weight: 500;
+}
+
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid #dce2e8;
+}
+
+.about-principle {
+  min-height: 250px;
+  padding: 1.5rem;
+  border-right: 1px solid #dce2e8;
+  border-bottom: 1px solid #dce2e8;
+}
+
+.about-principle:first-child {
+  border-left: 1px solid #dce2e8;
+}
+
+.about-principle > span {
+  color: #8994a4;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+
+.about-principle h3 {
+  margin: 4rem 0 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.about-principle p {
+  margin: 0;
+  color: #687386;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.about-global {
+  padding: 8rem 0;
+  background: #ffffff;
+}
+
+.about-global-panel {
+  position: relative;
+  min-height: 600px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  overflow: hidden;
+  padding: 4rem;
+  background:
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(49, 231, 255, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(139, 92, 246, 0.2),
+      transparent 28%
+    ),
+    #07101e;
+  color: #ffffff;
+}
+
+.about-global-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 520px;
+}
+
+.about-global-copy .about-label {
+  color: #31e7ff;
+}
+
+.about-global h2 {
+  margin: 1.5rem 0 2rem;
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  line-height: 0.88;
+  letter-spacing: -0.07em;
+  font-weight: 500;
+}
+
+.about-global-copy > p:not(.about-label) {
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+}
+
+.about-location-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: #31e7ff;
+  font-family: monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.about-global-orbit {
+  position: relative;
+  min-height: 480px;
+}
+
+.about-globe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(49, 231, 255, 0.55);
+  border-radius: 50%;
+  background: rgba(5, 7, 10, 0.7);
+  box-shadow:
+    0 0 70px rgba(49, 231, 255, 0.15),
+    inset 0 0 50px rgba(139, 92, 246, 0.1);
+  transform: translate(-50%, -50%);
+}
+
+.about-globe span {
+  font-size: 2rem;
+  letter-spacing: -0.06em;
+}
+
+.about-orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid rgba(49, 231, 255, 0.18);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-orbit-one {
+  width: 380px;
+  height: 380px;
+}
+
+.about-orbit-two {
+  width: 500px;
+  height: 170px;
+  transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.about-future {
+  padding: 9rem 0;
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(139, 92, 246, 0.12),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.about-future h2 {
+  max-width: 1100px;
+  margin: 2rem 0 3rem;
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  line-height: 0.88;
+  letter-spacing: -0.075em;
+  font-weight: 500;
+}
+
+.about-future-cta {
+  color: #08101c;
+  border-color: #b9c2cd;
+}
+
+.about-future-cta:hover {
+  background: #08101c;
+  color: #ffffff;
+}
+
+.about-footer {
+  background: #050b14;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about-footer-inner {
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+}
+
+.about-footer a {
+  color: #31e7ff;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .about-nav-links {
+    display: none;
+  }
+
+  .about-hero-grid,
+  .about-story-grid,
+  .about-section-heading,
+  .about-global-panel {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-principles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-global-orbit {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    width: min(100% - 3rem, 1200px);
+  }
+
+  .about-header-cta {
+    display: none;
+  }
+
+  .about-hero {
+    padding: 5rem 0;
+  }
+
+  .about-story,
+  .about-ecosystem,
+  .about-approach,
+  .about-principles,
+  .about-global {
+    padding: 5rem 0;
+  }
+
+  .about-approach-row {
+    grid-template-columns: 45px 1fr;
+  }
+
+  .about-approach-row p {
+    grid-column: 2;
+  }
+
+  .about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-global-panel {
+    padding: 2rem;
+  }
+
+  .about-global-orbit {
+    min-height: 300px;
+  }
+
+  .about-orbit-one {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-orbit-two {
+    width: 320px;
+    height: 120px;
+  }
+
+  .about-footer-inner {
+    min-height: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
