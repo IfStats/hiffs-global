@@ -125,7 +125,7 @@ useEffect(() => {
 </a>
 
           <nav className="desktop-nav">
-            <a href="#about">About</a>
+            <a href="/about">About</a>
             <a href="#capabilities">Capabilities</a>
             <a href="#work">Work</a>
             <a href="#industries">Industries</a>
@@ -591,7 +591,7 @@ useEffect(() => {
           <div className="footer-links">
             <div>
               <p>GROUP</p>
-              <a href="#about">About</a>
+              <a href="/about">About</a>
               <a href="#capabilities">Capabilities</a>
               <a href="#work">Selected Work</a>
             </div>
