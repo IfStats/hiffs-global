@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const capabilities = [
   {
     number: "01",
@@ -98,17 +100,17 @@ export default function DictazPage() {
   return (
     <main className="dictaz-page">
       <header className="dictaz-header">
-        <a href="/" className="dictaz-brand">
+        <Link href="/" className="dictaz-brand">
           <span className="dictaz-brand-mark">H</span>
           <span>HIFFS GLOBAL</span>
-        </a>
+        </Link>
 
         <nav className="dictaz-nav" aria-label="Product navigation">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/#ecosystem">Ecosystem</a>
-          <a href="/#work">Work</a>
-          <a href="/#contact">Contact</a>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/#ecosystem">Ecosystem</Link>
+          <Link href="/#work">Work</Link>
+          <Link href="/#contact">Contact</Link>
         </nav>
       </header>
 
@@ -167,12 +169,12 @@ export default function DictazPage() {
               Explore Dictaz <span>↗</span>
             </a>
 
-            <a
+            <Link
               href="/#contact"
               className="dictaz-button dictaz-button-secondary"
             >
               Start a Conversation <span>↗</span>
-            </a>
+            </Link>
           </div>
 
           <div className="dictaz-status">
@@ -663,33 +665,33 @@ export default function DictazPage() {
           </p>
 
           <div className="dictaz-actions">
-            <a
+            <Link
               href="/#work"
               className="dictaz-button dictaz-button-primary"
             >
               Explore Our Work <span>↗</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/#contact"
               className="dictaz-button dictaz-button-secondary"
             >
               Start a Conversation <span>↗</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
       <footer className="dictaz-footer">
         <div className="dictaz-container dictaz-footer-inner">
-          <a href="/" className="dictaz-brand">
+          <Link href="/" className="dictaz-brand">
             <span className="dictaz-brand-mark">H</span>
             <span>HIFFS GLOBAL</span>
-          </a>
+          </Link>
 
           <p>Technology & Innovation Group</p>
 
-          <a href="/">← Back to Hiffs Global</a>
+          <Link href="/">← Back to Hiffs Global</Link>
         </div>
       </footer>
 

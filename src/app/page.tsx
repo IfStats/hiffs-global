@@ -473,9 +473,9 @@ useEffect(() => {
         </h2>
 
         <p className="ventures-lead">
-          Hiffs Global is not only building for today's digital economy.
+          Hiffs Global is not only building for today&apos;s digital economy.
           We explore emerging technologies, develop new products and pursue
-          opportunities that can define tomorrow's markets.
+          opportunities that can define tomorrow&apos;s markets.
         </p>
 
         <div className="ventures-marker">
@@ -533,7 +533,7 @@ useEffect(() => {
 
         <p>
           Tell us what you are building, what needs to change, or where
-          technology could create a better outcome. Let's explore what is
+          technology could create a better outcome. Let&apos;s explore what is
           possible.
         </p>
 

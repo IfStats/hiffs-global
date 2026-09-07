@@ -147,9 +147,9 @@ export default function AtlasTraderPage() {
               Explore the Architecture <span>↗</span>
             </a>
 
-            <a href="/#contact" className="product-button product-button-secondary">
+            <Link href="/#contact" className="product-button product-button-secondary">
               Start a Conversation <span>↗</span>
-            </a>
+            </Link>
           </div>
 
           <div className="product-status">
@@ -540,13 +540,13 @@ export default function AtlasTraderPage() {
           </p>
 
           <div className="product-actions">
-            <a href="/#work" className="product-button product-button-primary">
+            <Link href="/#work" className="product-button product-button-primary">
               Explore Our Work <span>↗</span>
-            </a>
+            </Link>
 
-            <a href="/#contact" className="product-button product-button-secondary">
+            <Link href="/#contact" className="product-button product-button-secondary">
               Start a Conversation <span>↗</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
