@@ -850,3 +850,360 @@
             border-bottom: 0;
           }
         }
+
+        /* =========================================
+   ATLASTRADER — RESPONSIVE NORMALIZATION
+========================================= */
+
+.atlas-page {
+  overflow-x: hidden;
+}
+
+.atlas-page .product-header {
+  width: 100%;
+}
+
+.atlas-page .product-nav {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 88px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.atlas-page .product-header nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.atlas-page .product-header-cta {
+  white-space: nowrap;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1000px) {
+  .atlas-page .product-container {
+    width: min(100% - 40px, 900px);
+  }
+
+  .atlas-page .product-hero {
+    min-height: 720px;
+  }
+
+  .atlas-page .product-hero-orbit {
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    opacity: 0.45;
+  }
+
+  .atlas-page .product-hero h1 {
+    max-width: 680px;
+  }
+
+  .atlas-page .product-two-column,
+  .atlas-page .risk-layout {
+    gap: 60px;
+  }
+
+  .atlas-page .system-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .atlas-page .architecture-map {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .atlas-page .architecture-arrow {
+    transform: rotate(90deg);
+  }
+
+  .atlas-page .architecture-column {
+    min-height: auto;
+  }
+
+  .atlas-page .roadmap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 760px) {
+  .atlas-page .product-header {
+    height: 72px;
+    padding: 0;
+  }
+
+  .atlas-page .product-nav {
+    width: calc(100% - 32px);
+    min-height: 72px;
+  }
+
+  .atlas-page .product-header nav {
+    display: none;
+  }
+
+  .atlas-page .product-header-cta {
+    display: none;
+  }
+
+  .atlas-page .product-brand {
+    gap: 10px;
+    font-size: 11px;
+  }
+
+  .atlas-page .product-brand img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .atlas-page .product-container {
+    width: calc(100% - 32px);
+  }
+
+  .atlas-page .product-hero {
+    min-height: auto;
+    padding: 140px 0 90px;
+    align-items: flex-start;
+  }
+
+  .atlas-page .product-hero-content {
+    padding-top: 0;
+  }
+
+  .atlas-page .product-eyebrow,
+  .atlas-page .product-section-number {
+    font-size: 9px;
+    line-height: 1.6;
+    letter-spacing: 0.14em;
+  }
+
+  .atlas-page .product-hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 13vw, 64px);
+    line-height: 0.97;
+  }
+
+  .atlas-page .product-hero-copy {
+    max-width: 100%;
+    margin-top: 26px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .atlas-page .product-hero-orbit {
+    width: 340px;
+    height: 340px;
+    right: -190px;
+    top: 66%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .atlas-page .orbit-core {
+    width: 110px;
+    height: 110px;
+    font-size: 25px;
+  }
+
+  .atlas-page .product-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .atlas-page .product-button {
+    width: 100%;
+    min-height: 54px;
+  }
+
+  .atlas-page .product-status {
+    margin-top: 28px;
+    line-height: 1.5;
+  }
+
+  .atlas-page .product-section {
+    padding: 72px 0;
+  }
+
+  .atlas-page .product-two-column,
+  .atlas-page .risk-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .atlas-page .product-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .atlas-page .product-section h2 {
+    font-size: clamp(38px, 11vw, 54px);
+    line-height: 1;
+  }
+
+  .atlas-page .product-copy,
+  .atlas-page .risk-intro p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  /* pipeline */
+
+  .atlas-page .pipeline {
+    max-width: 100%;
+  }
+
+  .atlas-page .pipeline-step {
+    min-height: 68px;
+    grid-template-columns: 42px 1fr;
+    padding: 0 16px;
+  }
+
+  .atlas-page .pipeline-step strong {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  /* systems */
+
+  .atlas-page .system-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-page .system-card {
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .atlas-page .system-card h3 {
+    margin-top: 38px;
+  }
+
+  /* market + capabilities */
+
+  .atlas-page .market-row,
+  .atlas-page .capability-item,
+  .atlas-page .technology-list div,
+  .atlas-page .risk-list div {
+    min-height: 66px;
+  }
+
+  .atlas-page .capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* architecture */
+
+  .atlas-page .architecture-map {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .atlas-page .architecture-arrow {
+    transform: rotate(90deg);
+    padding: 4px 0;
+  }
+
+  .atlas-page .architecture-column {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .atlas-page .architecture-column > span {
+    margin-bottom: 28px;
+  }
+
+  /* roadmap */
+
+  .atlas-page .roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .atlas-page .roadmap-item {
+    min-height: 110px;
+    border-right: 0;
+    border-bottom: 1px solid #dce2e9;
+  }
+
+  .atlas-page .roadmap-item:last-child {
+    border-bottom: 0;
+  }
+
+  .atlas-page .roadmap-item strong {
+    margin-top: 32px;
+  }
+
+  .atlas-page .roadmap-item i {
+    right: 20px;
+  }
+
+  /* relationship */
+
+  .atlas-page .relationship {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 40px;
+  }
+
+  .atlas-page .relationship-node {
+    width: 100%;
+    min-height: 130px;
+  }
+
+  .atlas-page .relationship-line {
+    width: 1px;
+    height: 32px;
+  }
+
+  /* CTA */
+
+  .atlas-page .product-cta {
+    padding: 90px 0;
+  }
+
+  .atlas-page .product-cta h2 {
+    font-size: clamp(40px, 12vw, 58px);
+  }
+
+  /* footer */
+
+  .atlas-page .product-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 420px) {
+  .atlas-page .product-container,
+  .atlas-page .product-nav {
+    width: calc(100% - 28px);
+  }
+
+  .atlas-page .product-hero {
+    padding-top: 125px;
+    padding-bottom: 75px;
+  }
+
+  .atlas-page .product-hero h1 {
+    font-size: 43px;
+  }
+
+  .atlas-page .product-section {
+    padding: 62px 0;
+  }
+
+  .atlas-page .product-section h2 {
+    font-size: 39px;
+  }
+
+  .atlas-page .product-hero-orbit {
+    right: -220px;
+  }
+}
