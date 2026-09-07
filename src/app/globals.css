@@ -2662,6 +2662,207 @@ html {
   letter-spacing: 0.06em;
 }
 
+/* =========================================
+   ABOUT — LEADERSHIP
+========================================= */
+
+.about-leadership {
+  padding: 8rem 0;
+  background: #ffffff;
+  color: #10141c;
+  border-top: 1px solid #e4e9ef;
+}
+
+.about-leadership-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(4rem, 8vw, 8rem);
+  align-items: start;
+}
+
+.about-leadership-image {
+  position: relative;
+  min-height: 680px;
+  overflow: hidden;
+  background: #e9edf2;
+}
+
+.about-leadership-photo {
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.about-leadership-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to top,
+      rgba(5, 7, 10, 0.5),
+      transparent 34%
+    );
+  pointer-events: none;
+}
+
+.about-leadership-image-label {
+  position: absolute;
+  z-index: 2;
+  left: 28px;
+  right: 28px;
+  bottom: 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.about-leadership-content {
+  padding-top: 0.25rem;
+}
+
+.about-leadership-content h2 {
+  margin: 0;
+  max-width: 650px;
+  font-size: clamp(2.8rem, 5vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+}
+
+.about-leadership-content h2 span {
+  color: #6f7a88;
+}
+
+.about-leader-identity {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #dce2e8;
+  border-bottom: 1px solid #dce2e8;
+}
+
+.about-leader-identity h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.about-leader-identity p {
+  margin: 0;
+  color: #1f6ed4;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-leader-identity span {
+  display: block;
+  margin-top: 0.35rem;
+  color: #7a8491;
+  font-size: 0.75rem;
+}
+
+.about-leadership-copy {
+  margin-top: 2.25rem;
+  max-width: 650px;
+}
+
+.about-leadership-copy p {
+  margin: 0 0 1.25rem;
+  color: #626d7b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.about-leadership-quote {
+  margin: 3rem 0 0;
+  padding: 2rem 0 0 2rem;
+  border-top: 1px solid #dce2e8;
+  border-left: 2px solid #4da3ff;
+}
+
+.about-leadership-quote > p {
+  margin: 0;
+  color: #252b34;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.55;
+  letter-spacing: -0.025em;
+}
+
+.about-leadership-quote footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1.75rem;
+}
+
+.about-leadership-quote footer strong {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.about-leadership-quote footer span {
+  color: #7a8491;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .about-leadership {
+    padding: 6rem 0;
+  }
+
+  .about-leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .about-leadership-image {
+    min-height: min(760px, 110vw);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-leadership {
+    padding: 4.5rem 0;
+  }
+
+  .about-leadership-grid {
+    gap: 3rem;
+  }
+
+  .about-leadership-image {
+    min-height: 125vw;
+  }
+
+  .about-leadership-image-label {
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .about-leadership-content h2 {
+    font-size: clamp(2.45rem, 12vw, 3.6rem);
+  }
+
+  .about-leader-identity {
+    margin-top: 2.25rem;
+  }
+
+  .about-leadership-quote {
+    margin-top: 2.5rem;
+    padding: 1.5rem 0 0 1.25rem;
+  }
+}
+
 .about-footer a {
   color: #31e7ff;
   text-decoration: none;

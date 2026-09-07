@@ -167,6 +167,77 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <section className="about-leadership">
+  <div className="about-container">
+    <div className="about-leadership-grid">
+      <div className="about-leadership-image">
+        <Image
+          src="/ifeanyi-akunna-cto.jpg"
+          alt="Ifeanyi Joshua Akunna, Chief Technology Officer at Hiffs Global Enterprises"
+          fill
+          sizes="(max-width: 900px) 100vw, 46vw"
+          className="about-leadership-photo"
+        />
+
+        <div className="about-leadership-image-label">
+          <span>TECHNOLOGY LEADERSHIP</span>
+          <span>HIFFS GLOBAL</span>
+        </div>
+      </div>
+
+      <div className="about-leadership-content">
+        <p className="about-label">03 / LEADERSHIP</p>
+
+        <h2>
+          Technology with a vision.
+          <br />
+          <span>Built for what comes next.</span>
+        </h2>
+
+        <div className="about-leader-identity">
+          <h3>Ifeanyi Joshua Akunna</h3>
+          <p>Chief Technology Officer</p>
+          <span>Hiffs Global Enterprises</span>
+        </div>
+
+        <div className="about-leadership-copy">
+          <p>
+            Ifeanyi Joshua Akunna provides technology leadership across Hiffs
+            Global&apos;s software, artificial intelligence, data, automation
+            and digital-product initiatives.
+          </p>
+
+          <p>
+            His work focuses on connecting technology strategy with practical
+            system development — translating ideas and complex operational
+            requirements into structured digital products and intelligent
+            systems.
+          </p>
+
+          <p>
+            As Chief Technology Officer, he helps define the technical
+            direction of Hiffs Global and the engineering philosophy behind
+            the group&apos;s growing technology portfolio.
+          </p>
+        </div>
+
+        <blockquote className="about-leadership-quote">
+          <p>
+            Technology should not exist simply because it can be built. It
+            should solve meaningful problems, improve how people and
+            organizations operate, and create possibilities that were
+            previously difficult to achieve.
+          </p>
+
+          <footer>
+            <strong>Ifeanyi Joshua Akunna</strong>
+            <span>Chief Technology Officer</span>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="about-ecosystem">
         <div className="about-container">
