@@ -65,15 +65,15 @@ const projects = [
     href: "/work/eventbytes",
   },
   {
-    name: "Dictaz",
-    category: "AI / Intelligent Systems",
-    description:
-      "An evolving artificial intelligence platform connecting knowledge, reasoning, intelligent agents and automation.",
-    href: "/work/dictaz",
+  name: "Dictaz",
+  category: "Knowledge Technology / Intelligent Media",
+  description:
+    "An intelligent publishing and knowledge platform combining digital media, structured discovery and emerging AI capabilities.",
+  href: "/work/dictaz",
   },
   {
     name: "AtlasTrader",
-    category: "Financial Technology",
+    category: "FinTech R&D",
     description:
       "An intelligent market infrastructure initiative for systematic analysis, risk management and controlled execution.",
     href: "/work/atlastrader",

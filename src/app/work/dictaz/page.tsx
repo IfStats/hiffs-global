@@ -3,39 +3,39 @@
 const capabilities = [
   {
     number: "01",
-    title: "Generative AI",
+    title: "Digital Publishing",
     description:
-      "Intelligent language capabilities for creating, transforming and interacting with information.",
+      "A structured publishing environment for technology, AI, data, business, research, innovation and emerging ideas.",
   },
   {
     number: "02",
-    title: "Knowledge Intelligence",
+    title: "Knowledge Architecture",
     description:
-      "Connects AI reasoning with organizational knowledge, documents, data and information sources.",
+      "Organizes content through topics, categories, relationships and information structures designed for deeper discovery.",
   },
   {
     number: "03",
-    title: "AI Agents",
+    title: "Search & Discovery",
     description:
-      "Specialized intelligent agents designed to perform defined tasks and coordinate multi-step workflows.",
+      "Helps users navigate information through search, contextual relationships and intelligent content discovery.",
   },
   {
     number: "04",
-    title: "Workflow Automation",
+    title: "AI-Assisted Intelligence",
     description:
-      "Transforms repetitive processes into structured intelligent workflows that can be orchestrated and executed.",
+      "Developing capabilities for summarization, contextual retrieval, recommendations and conversational knowledge interaction.",
   },
   {
     number: "05",
-    title: "Decision Intelligence",
+    title: "Content Intelligence",
     description:
-      "Turns complex information into structured insights that support better operational and strategic decisions.",
+      "Uses structured information and emerging AI capabilities to make published knowledge more useful and accessible.",
   },
   {
     number: "06",
-    title: "Enterprise Intelligence",
+    title: "Advanced Intelligence",
     description:
-      "Creates an intelligence layer between people, organizational knowledge, data and business systems.",
+      "Longer-term development directions include agents, knowledge workflows, automation and enterprise-oriented intelligence.",
   },
 ];
 
@@ -44,31 +44,31 @@ const ecosystem = [
     number: "01",
     name: "Dictaz AI",
     description:
-      "The core intelligence and conversational AI foundation.",
+      "The developing intelligence layer for AI-assisted knowledge interaction and discovery.",
   },
   {
     number: "02",
     name: "DictazIQ",
     description:
-      "Intelligence, analytics and decision-support capabilities.",
+      "Intelligence, analytics and decision-support capabilities within the wider Dictaz ecosystem.",
   },
   {
     number: "03",
     name: "iDictaz",
     description:
-      "The intelligent interaction and assistant layer.",
+      "An intelligent interaction and assistant direction within the evolving platform.",
   },
   {
     number: "04",
     name: "Dictaz Agents",
     description:
-      "Specialized AI agents for defined tasks and workflows.",
+      "A longer-term direction for specialized agents, research assistance and intelligent workflows.",
   },
   {
     number: "05",
     name: "Dictaz Enterprise",
     description:
-      "Enterprise knowledge, integration and intelligent automation.",
+      "A future enterprise-oriented layer for knowledge, integration and intelligent automation.",
   },
 ];
 
@@ -143,19 +143,20 @@ export default function DictazPage() {
 
         <div className="dictaz-container dictaz-hero-content">
           <p className="dictaz-eyebrow">
-            HIFFS TECH / ARTIFICIAL INTELLIGENCE
+            HIFFS MEDIA × HIFFS TECH / KNOWLEDGE & INTELLIGENCE
           </p>
 
           <h1>
-            Intelligence for
+            Where knowledge
             <br />
-            <span>the Next Generation of Work.</span>
+            <span>meets intelligence.</span>
           </h1>
 
           <p className="dictaz-hero-copy">
-            Dictaz is a broader artificial intelligence initiative being
-            developed to connect people, knowledge, data and intelligent
-            systems through a unified intelligence layer.
+            Dictaz is an evolving publishing, knowledge and intelligence platform
+            combining technology media, structured information, discovery and
+            emerging artificial intelligence capabilities within one connected
+            ecosystem.
           </p>
 
           <div className="dictaz-actions">
@@ -184,31 +185,34 @@ export default function DictazPage() {
       <section className="dictaz-section" id="intelligence">
         <div className="dictaz-container dictaz-two-column">
           <div>
-            <p className="dictaz-section-number">01 / THE VISION</p>
+            <p className="dictaz-section-number">01 / THE PLATFORM</p>
 
             <h2>
-              An intelligence layer
-              <span> for modern work.</span>
+              Publishing knowledge.
+              <span> Building intelligence.</span>
             </h2>
           </div>
 
+        
           <div className="dictaz-copy">
-            <p>
-              Dictaz is envisioned as a platform for intelligent interaction,
-              knowledge processing, reasoning, automation and decision support.
-            </p>
+           <p>
+             Dictaz brings digital publishing, knowledge organization and
+             intelligent discovery together within a single evolving platform.
+           </p>
 
-            <p>
-              The long-term objective is to move beyond isolated AI
-              interactions and create systems that can understand context,
-              access relevant information, reason over it and participate in
-              meaningful workflows.
-            </p>
+           <p>
+             Its publishing foundation is being developed around technology,
+             artificial intelligence, data, business, innovation, research and
+             emerging ideas — with structured content architecture designed to
+             make knowledge easier to discover and understand.
+           </p>
 
-            <p>
-              Dictaz brings these capabilities together as part of Hiffs
-              Global&apos;s broader technology and innovation portfolio.
-            </p>
+           <p>
+             Alongside publishing, Dictaz is developing an intelligence layer
+             that can progressively support AI-assisted discovery,
+             summarization, contextual retrieval, recommendations,
+             conversational interaction and advanced knowledge workflows.
+           </p>
           </div>
         </div>
       </section>
@@ -216,14 +220,14 @@ export default function DictazPage() {
       <section className="dictaz-section dictaz-dark-section">
         <div className="dictaz-container">
           <div className="dictaz-section-heading">
-            <p className="dictaz-section-number">02 / THE INTELLIGENCE ARCHITECTURE</p>
+            <p className="dictaz-section-number">02 / THE DICTAZ ARCHITECTURE</p>
 
             <h2>
-              Understand.
+              Publish.
               <br />
-              Reason.
+              Discover.
               <br />
-              <span>Act.</span>
+              <span>Understand.</span>
             </h2>
           </div>
 
@@ -311,8 +315,10 @@ export default function DictazPage() {
             </h2>
 
             <p className="dictaz-heading-copy">
-              Dictaz is being developed as a broader platform with multiple
-              capability and product directions.
+              Dictaz is being developed as one connected platform spanning
+              publishing, knowledge discovery and increasingly intelligent
+              capabilities. The product tracks below represent parts of that
+              evolving ecosystem rather than unrelated standalone products.
             </p>
           </div>
 
@@ -635,7 +641,7 @@ export default function DictazPage() {
             <div className="dictaz-relationship-node dictaz-relationship-active">
               <span>03</span>
               <strong>DICTAZ</strong>
-              <small>Artificial Intelligence & Intelligent Systems</small>
+              <small>Knowledge, Publishing & Intelligent Systems</small>
             </div>
           </div>
         </div>
@@ -646,9 +652,9 @@ export default function DictazPage() {
           <p className="dictaz-eyebrow">HIFFS TECH / ACTIVE DEVELOPMENT</p>
 
           <h2>
-            Building intelligence
+            Publishing knowledge.
             <br />
-            <span>for what comes next.</span>
+            <span>Building intelligence.</span>
           </h2>
 
           <p>
