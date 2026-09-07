@@ -3404,3 +3404,490 @@ html {
 .work-status {
   pointer-events: none;
 }
+
+/* =========================================================
+   HIFFS GLOBAL — LAUNCH MOBILE NORMALIZATION
+   ========================================================= */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+/* -------------------------
+   TABLET / SMALL LAPTOP
+------------------------- */
+
+@media (max-width: 900px) {
+  .container,
+  .about-container,
+  .product-container,
+  .dictaz-container {
+    width: min(100% - 40px, 760px);
+  }
+
+  /* HOME HEADER */
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .nav {
+    min-height: 76px;
+  }
+
+  /* HOME HERO */
+
+  .hero,
+  .hero-content {
+    min-height: 680px;
+  }
+
+  .hero-copy-column {
+    max-width: 650px;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 10vw, 78px);
+  }
+
+  .section {
+    padding: 90px 0;
+  }
+
+  .intro-grid,
+  .section-heading,
+  .capabilities-heading,
+  .ventures-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .division-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-side {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  /* ABOUT */
+
+  .about-hero-grid,
+  .about-story-grid,
+  .about-section-heading {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-approach-row {
+    grid-template-columns: 60px 0.65fr 1fr;
+  }
+
+  /* EVENTBYTES / SHARED PRODUCT */
+
+  .product-nav nav {
+    display: none;
+  }
+
+  .product-hero-grid,
+  .product-two-column,
+  .product-section-heading {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .product-hero-visual {
+    min-height: 420px;
+  }
+
+  /* DICTAZ */
+
+  .dictaz-page .dictaz-nav {
+    display: none;
+  }
+
+  .dictaz-page .dictaz-two-column {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .dictaz-page .dictaz-intelligence-visual {
+    opacity: 0.4;
+    right: -180px;
+  }
+
+  .dictaz-page .dictaz-ecosystem,
+  .dictaz-page .dictaz-capability-grid,
+  .dictaz-page .dictaz-use-case-grid,
+  .dictaz-page .dictaz-industry-grid,
+  .dictaz-page .dictaz-tech-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* -------------------------
+   MOBILE
+------------------------- */
+
+@media (max-width: 600px) {
+  .container,
+  .about-container,
+  .product-container,
+  .dictaz-container {
+    width: calc(100% - 32px);
+  }
+
+  /* GLOBAL TOUCH TARGET */
+
+  a,
+  button {
+    min-height: 44px;
+  }
+
+  /* HOME HEADER */
+
+  .site-header {
+    background: rgba(5, 7, 10, 0.82);
+    backdrop-filter: blur(16px);
+  }
+
+  .nav {
+    min-height: 70px;
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 12px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  /* HOME HERO */
+
+  .hero,
+  .hero-content {
+    min-height: 620px;
+  }
+
+  .hero-content {
+    align-items: center;
+    padding-top: 72px;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(44px, 13vw, 60px);
+    line-height: 0.96;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-copy {
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-slide-label {
+    display: none;
+  }
+
+  .hero-controls {
+    display: none;
+  }
+
+  /* HOME SECTIONS */
+
+  .section {
+    padding: 68px 0;
+  }
+
+  .intro-grid,
+  .section-heading,
+  .capabilities-heading {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .intro-grid h2,
+  .section-heading h2,
+  .capabilities-heading h2,
+  .industries-section h2,
+  .ventures-section h2 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .large-copy {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .division-card {
+    min-height: 300px;
+  }
+
+  .ecosystem-card {
+    min-height: 330px;
+  }
+
+  .capability-row {
+    min-height: 92px;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card-visual {
+    height: 240px;
+  }
+
+  .work-card-content p {
+    min-height: auto;
+  }
+
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    min-height: 165px;
+  }
+
+  .ventures-panel {
+    min-height: 340px;
+  }
+
+  .cta-section {
+    padding-bottom: 5rem;
+  }
+
+  .cta-content {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: clamp(40px, 12vw, 56px);
+  }
+
+  .cta-side {
+    padding: 1.5rem;
+  }
+
+  /* ABOUT */
+
+  .about-nav {
+    min-height: 72px;
+  }
+
+  .about-nav-links,
+  .about-header-cta {
+    display: none;
+  }
+
+  .about-brand-text {
+    font-size: 0.78rem;
+  }
+
+  .about-hero {
+    padding: 5rem 0 4rem;
+  }
+
+  .about-hero h1 {
+    font-size: clamp(44px, 13vw, 62px);
+  }
+
+  .about-story,
+  .about-ecosystem,
+  .about-approach,
+  .about-principles,
+  .about-global,
+  .about-leadership {
+    padding: 4.5rem 0;
+  }
+
+  .about-section-heading h2,
+  .about-story h2,
+  .about-belief h2,
+  .about-future h2 {
+    font-size: clamp(38px, 11vw, 54px);
+  }
+
+  .about-approach-row {
+    grid-template-columns: 42px 1fr;
+    gap: 1rem;
+  }
+
+  .about-approach-row p {
+    grid-column: 2;
+  }
+
+  .about-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-leadership-image {
+    min-height: 120vw;
+    max-height: 680px;
+  }
+
+  /* EVENTBYTES */
+
+  .product-nav {
+    min-height: 70px;
+  }
+
+  .product-nav nav,
+  .product-header-cta {
+    display: none;
+  }
+
+  .product-brand {
+    font-size: 0.72rem;
+  }
+
+  .product-hero {
+    padding: 4.5rem 0;
+  }
+
+  .product-hero h1 {
+    font-size: clamp(58px, 20vw, 88px);
+  }
+
+  .product-hero-visual {
+    min-height: 330px;
+  }
+
+  .product-two-column,
+  .product-section-heading {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .product-links {
+    flex-direction: column;
+  }
+
+  .product-links a {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* DICTAZ */
+
+  .dictaz-page .dictaz-header {
+    height: 72px;
+    padding: 0 16px;
+  }
+
+  .dictaz-page .dictaz-nav {
+    display: none;
+  }
+
+  .dictaz-page .dictaz-brand {
+    font-size: 10px;
+  }
+
+  .dictaz-page .dictaz-hero {
+    min-height: auto;
+    padding: 135px 0 85px;
+  }
+
+  .dictaz-page .dictaz-hero-content {
+    padding-top: 0;
+  }
+
+  .dictaz-page .dictaz-hero h1 {
+    max-width: 100%;
+    font-size: clamp(43px, 13vw, 60px);
+    line-height: 0.97;
+  }
+
+  .dictaz-page .dictaz-hero-copy {
+    font-size: 16px;
+  }
+
+  .dictaz-page .dictaz-intelligence-visual {
+    width: 350px;
+    height: 350px;
+    right: -210px;
+    top: 55%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .dictaz-page .dictaz-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dictaz-page .dictaz-button {
+    width: 100%;
+  }
+
+  .dictaz-page .dictaz-section {
+    padding: 72px 0;
+  }
+
+  .dictaz-page .dictaz-section h2 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .dictaz-page .dictaz-two-column,
+  .dictaz-page .dictaz-ecosystem,
+  .dictaz-page .dictaz-capability-grid,
+  .dictaz-page .dictaz-use-case-grid,
+  .dictaz-page .dictaz-industry-grid,
+  .dictaz-page .dictaz-tech-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .dictaz-page .dictaz-workflow,
+  .dictaz-page .dictaz-roadmap {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 12px;
+  }
+
+  .dictaz-page .dictaz-integration-map {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .dictaz-page .dictaz-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
