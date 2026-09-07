@@ -1,4 +1,11 @@
-"use client";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata = {
+  title: "AtlasTrader",
+  description:
+    "AtlasTrader is a financial technology research and engineering initiative focused on systematic market analysis, risk management and controlled execution infrastructure.",
+};
 
 const systems = [
   {
@@ -73,19 +80,34 @@ export default function AtlasTraderPage() {
   return (
     <main className="product-page">
       <header className="product-header">
-        <a href="/" className="product-brand">
-          <span className="product-brand-mark">H</span>
-          <span>HIFFS GLOBAL</span>
-        </a>
+  <div className="product-container product-nav">
+    <Link href="/" className="product-brand">
+      <Image
+        src="/hiffs-global-icon.png"
+        alt="Hiffs Global"
+        width={36}
+        height={36}
+        priority
+      />
 
-        <nav className="product-nav" aria-label="Product navigation">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/#ecosystem">Ecosystem</a>
-          <a href="/#work">Work</a>
-          <a href="/#contact">Contact</a>
-        </nav>
-      </header>
+      <span>
+        HIFFS <strong>GLOBAL</strong>
+      </span>
+    </Link>
+
+    <nav aria-label="Product navigation">
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/#capabilities">Capabilities</Link>
+      <Link href="/#work">Work</Link>
+      <Link href="/#contact">Contact</Link>
+    </nav>
+
+    <Link href="/#contact" className="product-header-cta">
+      Start a Project ↗
+    </Link>
+  </div>
+</header>
 
       <section className="product-hero atlas-hero">
         <div className="product-hero-grid" />
@@ -103,7 +125,7 @@ export default function AtlasTraderPage() {
 
         <div className="product-container product-hero-content">
           <p className="product-eyebrow">
-            HIFFS TECH / FINANCIAL TECHNOLOGY
+            HIFFS TECH / FINTECH R&D
           </p>
 
           <h1>
@@ -131,7 +153,7 @@ export default function AtlasTraderPage() {
 
           <div className="product-status">
             <span className="status-dot" />
-            <span>ACTIVE DEVELOPMENT</span>
+            <span>ACTIVE DEVELOPMENT / RESEARCH</span>
           </div>
         </div>
       </section>
@@ -492,7 +514,7 @@ export default function AtlasTraderPage() {
 
             <div className="relationship-node relationship-node-active">
               <span>03</span>
-              <strong>ATLASTRADER</strong>
+              <strong>AtlasTrader</strong>
               <small>Financial Intelligence & Systematic Execution</small>
             </div>
           </div>
@@ -527,19 +549,27 @@ export default function AtlasTraderPage() {
       </section>
 
       <footer className="product-footer">
-        <div className="product-container product-footer-inner">
-          <a href="/" className="product-brand">
-            <span className="product-brand-mark">H</span>
-            <span>HIFFS GLOBAL</span>
-          </a>
+  <div className="product-container product-footer-inner">
+    <Link href="/" className="product-brand">
+      <Image
+        src="/hiffs-global-icon.png"
+        alt="Hiffs Global"
+        width={34}
+        height={34}
+      />
 
-          <p>Technology & Innovation Group</p>
+      <span>
+        HIFFS <strong>GLOBAL</strong>
+      </span>
+    </Link>
 
-          <a href="/">← Back to Hiffs Global</a>
-        </div>
-      </footer>
+    <p>Technology & Innovation Group</p>
 
-      <style jsx global>{`
+    <Link href="/">← Back to Hiffs Global</Link>
+  </div>
+</footer>
+
+      <style>{`
         .product-page {
           --product-bg: #05070a;
           --product-panel: #0a0d14;
