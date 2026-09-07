@@ -41,31 +41,77 @@ const ecosystem = [
 const principles = [
   {
     number: "01",
-    title: "Innovation",
-    text: "We explore better ways to solve problems and create meaningful technological possibilities.",
+    title: "Excellence",
+    text: "We pursue high standards in thinking, design, engineering, execution and service.",
   },
   {
     number: "02",
-    title: "Excellence",
-    text: "We pursue high standards in the systems we design, the products we build and the experiences we create.",
+    title: "Intelligence",
+    text: "We value knowledge, evidence, structured thinking and informed decision-making.",
   },
   {
     number: "03",
     title: "Integrity",
-    text: "We believe durable businesses and technologies are built on trust, responsibility and transparency.",
+    text: "We communicate capabilities responsibly and build relationships around trust and transparency.",
   },
   {
     number: "04",
+    title: "Innovation",
+    text: "We explore new technologies and better ways to solve meaningful problems.",
+  },
+  {
+    number: "05",
+    title: "Execution",
+    text: "Ideas create value when they are translated into working systems and meaningful outcomes.",
+  },
+  {
+    number: "06",
     title: "Impact",
-    text: "Technology should produce useful outcomes for businesses, institutions, communities and people.",
+    text: "Technology should create practical value for businesses, institutions, communities and people.",
   },
 ];
 
 const approach = [
-  ["01", "Discover", "Understand the problem, context and opportunity."],
-  ["02", "Design", "Translate insight into a clear technology and product direction."],
-  ["03", "Build", "Engineer robust systems with performance, usability and scale in mind."],
-  ["04", "Evolve", "Continuously improve products and systems as needs and markets change."],
+  [
+    "01",
+    "Discover",
+    "Understand the organization, problem, users, operating environment and opportunity.",
+  ],
+  [
+    "02",
+    "Define",
+    "Translate the challenge into clear product, operational and technology requirements.",
+  ],
+  [
+    "03",
+    "Architect",
+    "Design the system architecture, data model, workflows, integrations and technology foundation.",
+  ],
+  [
+    "04",
+    "Build",
+    "Engineer the product through controlled iterations with quality and maintainability in mind.",
+  ],
+  [
+    "05",
+    "Integrate",
+    "Connect applications, APIs, data sources and business systems into a coherent technology environment.",
+  ],
+  [
+    "06",
+    "Validate",
+    "Test functionality, usability, responsiveness, integrations and production readiness.",
+  ],
+  [
+    "07",
+    "Deploy",
+    "Move the solution into an appropriate production environment and verify operational readiness.",
+  ],
+  [
+    "08",
+    "Evolve",
+    "Use feedback, data and changing requirements to continuously improve the system.",
+  ],
 ];
 
 export default function AboutPage() {
@@ -243,7 +289,7 @@ export default function AboutPage() {
         <div className="about-container">
           <div className="about-section-heading">
             <div>
-              <p className="about-label">03 / OUR ECOSYSTEM</p>
+              <p className="about-label">04 / OUR ECOSYSTEM</p>
               <h2>
                 Four engines.
                 <br />
@@ -280,7 +326,7 @@ export default function AboutPage() {
         <div className="about-container">
           <div className="about-section-heading">
             <div>
-              <p className="about-label">04 / OUR APPROACH</p>
+              <p className="about-label">05 / OUR APPROACH</p>
               <h2>
                 From idea
                 <br />
@@ -289,9 +335,10 @@ export default function AboutPage() {
             </div>
 
             <p>
-              We combine strategic thinking with engineering discipline to
-              move from uncertainty to useful, scalable technology.
-            </p>
+              We combine strategic thinking, product discipline and engineering
+              execution to move from a clearly understood problem to technology
+              that can operate, scale and evolve.
+</p>
           </div>
 
           <div className="about-approach-list">
@@ -308,7 +355,7 @@ export default function AboutPage() {
 
       <section className="about-principles">
         <div className="about-container">
-          <p className="about-label">05 / WHAT WE BELIEVE</p>
+          <p className="about-label">06 / WHAT WE BELIEVE</p>
 
           <div className="about-belief">
             <h2>
@@ -335,7 +382,7 @@ export default function AboutPage() {
             <div className="about-global-glow" />
 
             <div className="about-global-copy">
-              <p className="about-label">06 / GLOBAL OUTLOOK</p>
+              <p className="about-label">07 / GLOBAL OUTLOOK</p>
 
               <h2>
                 Africa
@@ -344,10 +391,11 @@ export default function AboutPage() {
               </h2>
 
               <p>
-                We see technology as a bridge between talent, ideas,
-                businesses and global opportunity. Our ambition is to build
-                from Africa while thinking and operating globally.
-              </p>
+                Hiffs Global is building from an African context with a global
+                technology outlook. We believe locally relevant solutions can be
+                engineered to international standards and developed with the
+                ambition to compete beyond geography.
+</p>
 
               <div className="about-location-row">
                 <span>AFRICA</span>
@@ -369,7 +417,7 @@ export default function AboutPage() {
 
       <section className="about-future">
         <div className="about-container">
-          <p className="about-label">07 / THE FUTURE</p>
+          <p className="about-label">08 / THE FUTURE</p>
 
           <h2>
             We are not waiting
