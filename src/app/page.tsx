@@ -58,24 +58,43 @@ const industries = [
 
 const projects = [
   {
+    name: "Hiffs Connect",
+    category: "Business Messaging Infrastructure",
+    status: "LIVE / PRODUCTION",
+    description:
+      "An omnichannel business messaging platform for SMS, WhatsApp, transactional messaging, sender management, routing, wallet billing and API access.",
+    href: "/work/hiffs-connect",
+  },
+  {
+    name: "Dictaz",
+    category: "Knowledge Technology / Intelligent Media",
+    status: "ACTIVE DEVELOPMENT",
+    description:
+      "An intelligent publishing and knowledge platform combining digital media, structured discovery and emerging AI capabilities.",
+    href: "/work/dictaz",
+  },
+  {
+    name: "DictazIQ",
+    category: "Sports Intelligence",
+    status: "ACTIVE DEVELOPMENT",
+    description:
+      "A football prediction and sports intelligence platform combining mathematical rating models, research fusion, fixture data and transparent prediction workflows.",
+    href: "/work/dictaziq",
+  },
+  {
     name: "EventBytes",
     category: "Event Technology",
+    status: "ACTIVE DEVELOPMENT",
     description:
-      "A digital event technology platform for event management, ticketing, QR verification and operational intelligence.",
+      "An event technology platform for ticketing, event operations, organizer workflows, QR verification and attendee check-in.",
     href: "/work/eventbytes",
   },
   {
-  name: "Dictaz",
-  category: "Knowledge Technology / Intelligent Media",
-  description:
-    "An intelligent publishing and knowledge platform combining digital media, structured discovery and emerging AI capabilities.",
-  href: "/work/dictaz",
-  },
-  {
     name: "AtlasTrader",
-    category: "FinTech R&D",
+    category: "Financial Intelligence / FinTech R&D",
+    status: "ACTIVE DEVELOPMENT / RESEARCH",
     description:
-      "An intelligent market infrastructure initiative for systematic analysis, risk management and controlled execution.",
+      "An intelligent multi-market infrastructure initiative for systematic analysis, risk management, decision-making and controlled execution.",
     href: "/work/atlastrader",
   },
 ];
@@ -396,7 +415,7 @@ useEffect(() => {
         {project.name.charAt(0)}
       </div>
 
-      <span className="work-status">SYSTEM / ACTIVE</span>
+      <span className="work-status">{project.status}</span>
     </div>
 
     <div className="work-card-content">
