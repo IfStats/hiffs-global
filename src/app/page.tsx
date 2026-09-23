@@ -389,9 +389,10 @@ useEffect(() => {
       </div>
 
       <p>
-        A selection of technology platforms and intelligent systems developed
-        across events, artificial intelligence and financial technology.
-      </p>
+  A growing portfolio of production platforms, intelligent systems and
+  research initiatives spanning communications, knowledge technology,
+  sports intelligence, events and financial technology.
+</p>
     </div>
 
     <div className="work-grid">

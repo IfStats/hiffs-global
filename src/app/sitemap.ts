@@ -19,13 +19,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/work/eventbytes`,
+      url: `${baseUrl}/work/hiffs-connect`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/work/dictaz`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/work/dictaz`,
+      url: `${baseUrl}/work/dictaziq`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/work/eventbytes`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

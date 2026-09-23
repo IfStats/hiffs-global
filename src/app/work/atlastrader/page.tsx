@@ -48,16 +48,36 @@ const systems = [
 ];
 
 const capabilities = [
-  "Real-time market-data ingestion",
-  "Market-state analysis",
-  "Systematic signal generation",
-  "Multi-market architecture",
-  "Risk-aware decision making",
-  "Position and exposure management",
-  "Broker and execution adapters",
-  "Fast state management",
-  "Persistent trading data",
-  "Monitoring and observability",
+  [
+    "01",
+    "Multi-Market Analysis",
+    "A modular foundation for analyzing multiple financial instruments across supported market classes.",
+  ],
+  [
+    "02",
+    "Signal Generation",
+    "Structured market analysis designed to convert data and defined rules into actionable trading signals.",
+  ],
+  [
+    "03",
+    "Risk Management",
+    "Controls for exposure, trade authorization, execution discipline and configurable risk constraints.",
+  ],
+  [
+    "04",
+    "Autonomous Workflows",
+    "An execution framework designed for controlled automation with minimal operator intervention.",
+  ],
+  [
+    "05",
+    "Market Data Ingestion",
+    "Continuous ingestion and normalization of market data for analysis, monitoring and decision workflows.",
+  ],
+  [
+    "06",
+    "Execution Infrastructure",
+    "A modular path from data and analysis through signals, authorization, risk checks and broker execution.",
+  ],
 ];
 
 const markets = [
@@ -281,10 +301,14 @@ export default function AtlasTraderPage() {
           </div>
 
           <div className="capability-grid">
-            {capabilities.map((capability, index) => (
-              <div className="capability-item" key={capability}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{capability}</strong>
+            {capabilities.map(([number, title, description]) => (
+              <div className="capability-item" key={number}>
+                <span>{number}</span>
+
+                <div>
+                  <strong>{title}</strong>
+                  <p>{description}</p>
+                </div>
               </div>
             ))}
           </div>

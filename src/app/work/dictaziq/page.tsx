@@ -2,58 +2,58 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-  title: "EventBytes",
+  title: "DictazIQ",
   description:
-    "EventBytes is a digital event technology platform for ticketing, attendee management, event operations and real-time event intelligence.",
+    "DictazIQ is a sports intelligence and football prediction platform combining rating models, fixture data, research fusion and transparent prediction workflows.",
 };
 
 const capabilities = [
   [
     "01",
-    "Digital Ticketing",
-    "Create, manage and validate digital tickets through a structured event workflow.",
+    "Rating-Based Analysis",
+    "Uses structured team rating differences as a mathematical foundation for match assessment.",
   ],
   [
     "02",
-    "QR Check-In",
-    "QR-based attendee verification designed for fast and controlled event access.",
+    "Research Fusion",
+    "Combines model output with independent research signals to strengthen or suppress selections.",
   ],
   [
     "03",
-    "Organizer Workspace",
-    "Tools for event creation, ticket operations, attendee management and organizer workflows.",
+    "Fixture Intelligence",
+    "Ingests fixture, team, competition and historical data into a structured prediction workflow.",
   ],
   [
     "04",
-    "Identity & Access",
-    "Authenticated user and organizer access backed by API-based identity infrastructure.",
+    "Prediction Transparency",
+    "Designed to expose model versions, confidence, probabilities and publication context.",
   ],
   [
     "05",
-    "Event Operations",
-    "A connected operational layer for managing events, tickets and attendee activity.",
+    "Provider Integration",
+    "Built to connect multiple football data sources for fixtures, lineups and match intelligence.",
   ],
   [
     "06",
-    "Operational Intelligence",
-    "A foundation for reporting, attendance visibility and event-performance analytics.",
+    "Multi-Sport Expansion",
+    "Football is the first focus, with architecture intended to support additional sports over time.",
   ],
 ];
 
 const architecture = [
-  "Next.js Web Platform",
-  "NestJS API",
-  "Authentication",
-  "Event Management",
-  "Ticketing",
-  "QR Check-In",
-  "Organizer Dashboard",
-  "PostgreSQL Data Layer",
+  "Fixture Data",
+  "Team Ratings",
+  "Historical Evidence",
+  "Mathematical Model",
+  "Research Fusion",
+  "Prediction Guards",
+  "Publication Layer",
+  "User Interface",
 ];
 
-export default function EventBytesPage() {
+export default function DictazIQPage() {
   return (
-    <main className="product-page eventbytes-page">
+    <main className="product-page dictaziq-page">
       <header className="product-header">
         <div className="product-container product-nav">
           <Link href="/" className="product-brand">
@@ -64,6 +64,7 @@ export default function EventBytesPage() {
               height={36}
               priority
             />
+
             <span>
               HIFFS <strong>GLOBAL</strong>
             </span>
@@ -85,28 +86,33 @@ export default function EventBytesPage() {
 
       <section className="product-hero">
         <div className="product-container">
-          <p className="product-label">HIFFS GLOBAL / SELECTED WORK / 01</p>
+          <p className="product-label">
+            HIFFS ANALYTICS / SPORTS INTELLIGENCE
+          </p>
 
           <div className="product-hero-grid">
             <div>
-              <p className="product-category">EVENT TECHNOLOGY PLATFORM</p>
+              <p className="product-category">
+                FOOTBALL PREDICTION & SPORTS INTELLIGENCE
+              </p>
 
               <h1>
-                Event
+                Dictaz
                 <br />
-                <span>Bytes.</span>
+                <span>IQ.</span>
               </h1>
 
               <p className="product-intro">
-                A digital platform designed to bring event discovery,
-                ticketing, access management and event intelligence into one
-                connected experience.
+                A football prediction and sports intelligence platform designed
+                to combine structured mathematical analysis, football data,
+                research signals and transparent prediction workflows.
               </p>
 
               <div className="product-links">
                 <Link href="/#contact">
                   Discuss the Platform <span>↗</span>
                 </Link>
+
                 <Link href="/#work">
                   Back to Selected Work <span>↗</span>
                 </Link>
@@ -119,13 +125,13 @@ export default function EventBytesPage() {
               <div className="product-visual-orbit product-orbit-two" />
 
               <div className="product-visual-core">
-                <span>EB</span>
+                <span>IQ</span>
               </div>
 
-              <span className="product-visual-node node-a">TICKETS</span>
-              <span className="product-visual-node node-b">EVENTS</span>
-              <span className="product-visual-node node-c">DATA</span>
-              <span className="product-visual-node node-d">ACCESS</span>
+              <span className="product-visual-node node-a">DATA</span>
+              <span className="product-visual-node node-b">MODEL</span>
+              <span className="product-visual-node node-c">RATING</span>
+              <span className="product-visual-node node-d">RESEARCH</span>
             </div>
           </div>
         </div>
@@ -136,24 +142,32 @@ export default function EventBytesPage() {
           <div className="product-two-column">
             <div>
               <p className="product-label">01 / THE PLATFORM</p>
+
               <h2>
-                One connected
+                Football intelligence
                 <br />
-                <span>event experience.</span>
+                <span>with structure.</span>
               </h2>
             </div>
 
             <div className="product-copy">
               <p>
-                EventBytes is being developed as an event technology platform
-                that connects organizers, attendees and event operations
-                through a unified digital experience.
+                DictazIQ is being developed as a professional football
+                prediction and sports intelligence platform with an emphasis on
+                transparent reasoning, reproducible models and disciplined
+                publication.
               </p>
 
               <p>
-                The platform brings together the core systems required to
-                discover events, manage tickets, verify access and understand
-                what is happening around an event.
+                The system combines team ratings, match data, mathematical
+                models and independent research inputs rather than relying on a
+                single prediction source.
+              </p>
+
+              <p>
+                Football is the first deployment focus, while the underlying
+                architecture is being designed for future expansion into other
+                sports.
               </p>
             </div>
           </div>
@@ -164,17 +178,18 @@ export default function EventBytesPage() {
         <div className="product-container">
           <div className="product-section-heading">
             <div>
-              <p className="product-label">02 / PLATFORM CAPABILITIES</p>
+              <p className="product-label">02 / CORE CAPABILITIES</p>
+
               <h2>
-                Built around
+                Built for
                 <br />
-                <span>the event.</span>
+                <span>prediction intelligence.</span>
               </h2>
             </div>
 
             <p>
-              A modular foundation for the operational and digital needs of
-              modern events.
+              A structured system for combining quantitative models, football
+              data and research evidence.
             </p>
           </div>
 
@@ -194,18 +209,22 @@ export default function EventBytesPage() {
         <div className="product-container">
           <div className="product-two-column">
             <div>
-              <p className="product-label">03 / SYSTEM ARCHITECTURE</p>
+              <p className="product-label">03 / INTELLIGENCE PIPELINE</p>
+
               <h2>
-                Designed as
+                From evidence
                 <br />
-                <span>a system.</span>
+                <span>to prediction.</span>
               </h2>
             </div>
 
             <div className="architecture-stack">
               {architecture.map((item, index) => (
                 <div className="architecture-row" key={item}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <span>
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+
                   <strong>{item}</strong>
                   <span>↗</span>
                 </div>
@@ -220,10 +239,11 @@ export default function EventBytesPage() {
           <div className="product-status-panel">
             <div>
               <p className="product-label">04 / PRODUCT STATUS</p>
+
               <h2>
-                Building the
+                Models first.
                 <br />
-                <span>next generation.</span>
+                <span>Platform evolving.</span>
               </h2>
             </div>
 
@@ -234,15 +254,17 @@ export default function EventBytesPage() {
               </div>
 
               <p>
-  EventBytes has an active application foundation covering web and API
-  architecture, authentication, database-backed identity, ticketing
-  workflows and QR-based attendee check-in.
-</p>
+                DictazIQ currently has an active data and prediction foundation,
+                including database-backed fixtures, model versions, prediction
+                records, mathematical rating logic, publication guards and
+                research-fusion workflows.
+              </p>
 
-<p>
-  Development continues across organizer tooling, event operations,
-  reporting, payments and the production attendee experience.
-</p>
+              <p>
+                Development continues across data ingestion, coverage,
+                prediction quality, provider integration and the public-facing
+                product experience.
+              </p>
             </div>
           </div>
         </div>
@@ -253,9 +275,9 @@ export default function EventBytesPage() {
           <p className="product-label">05 / NEXT</p>
 
           <h2>
-            Have an event
+            Building transparent
             <br />
-            technology challenge?
+            sports intelligence.
           </h2>
 
           <Link href="/#contact">
@@ -267,7 +289,7 @@ export default function EventBytesPage() {
       <footer className="product-footer">
         <div className="product-container">
           <span>© Hiffs Global Enterprises</span>
-          <Link href="/work/eventbytes">EventBytes</Link>
+          <Link href="/work/dictaziq">DictazIQ</Link>
           <Link href="/">Hiffs Global ↗</Link>
         </div>
       </footer>

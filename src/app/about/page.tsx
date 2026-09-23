@@ -12,28 +12,28 @@ const ecosystem = [
     number: "01",
     name: "Hiffs Tech",
     description:
-      "Software engineering, artificial intelligence, automation and enterprise technology systems.",
+      "Software engineering, artificial intelligence, automation, communications infrastructure, APIs, SaaS platforms and enterprise technology systems.",
     accent: "about-accent-blue",
   },
   {
     number: "02",
     name: "Hiffs Analytics",
     description:
-      "Data intelligence, business intelligence, analytics and decision-support systems.",
+      "Data intelligence, business intelligence, predictive systems, sports intelligence, analytics and decision-support platforms.",
     accent: "about-accent-cyan",
   },
   {
     number: "03",
     name: "Hiffs Media",
     description:
-      "Digital publishing, technology content, communications and creative media.",
+      "Digital publishing, intelligent media, technology content, communications and creative media platforms.",
     accent: "about-accent-violet",
   },
   {
     number: "04",
     name: "Future Ventures",
     description:
-      "Emerging technologies, products, strategic opportunities and venture development.",
+      "Emerging technologies, new digital products, strategic opportunities, partnerships and venture development.",
     accent: "about-accent-lime",
   },
 ];
@@ -198,11 +198,12 @@ export default function AboutPage() {
               </p>
 
               <p>
-                Our work spans software engineering, artificial intelligence,
-                data intelligence, automation, digital platforms and emerging
-                technology. The objective is simple: build useful systems that
-                solve real problems and create lasting value.
-              </p>
+  Our work spans software engineering, artificial intelligence,
+  communications infrastructure, data intelligence, sports
+  intelligence, automation, digital platforms, event technology,
+  intelligent media and emerging technology. The objective is simple:
+  build useful systems that solve real problems and create lasting value.
+</p>
 
               <p>
                 From Africa to global markets, we are building an ecosystem
